@@ -16,7 +16,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.SECRET }}
           aws-region: ap-northeast-2
 
-       - name: 2.SSH키 설정
+      - name: 2.SSH키 설정
         uses: webfactory/ssh-agent@v0.5.3
         with:
           ssh-private-key: ${{ secrets.AWS_SSH_KEY}}
