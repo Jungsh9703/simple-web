@@ -1,4 +1,4 @@
-## ec2 s3 deploy12
+## ec2 s3 deploy12 access bucket
 name: Deploy to AWS Check
 on:
   push:
