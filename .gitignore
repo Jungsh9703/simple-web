@@ -1,2 +1,4 @@
 xinfra/*.tar
 platform
+.github/workflows/simple-web-ec2-tough.yaml
+.github/workflows/simple-web-ec2-workflow.yaml
