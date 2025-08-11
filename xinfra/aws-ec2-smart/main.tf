@@ -112,7 +112,7 @@ resource "aws_key_pair" "ec2_key" {
 # EC2 인스턴스 생성
 resource "aws_instance" "nginx_instance" {
   ami             = "ami-08b09b6acd8d62254" # Amazon Linux 2 AMI (리전별로 AMI ID가 다를 수 있음)
-  instance_type   = "t2.micro"
+  instance_type   = "t3.micro"  # Free tier에서는 더이상 t2.micro를 지원하지 않음
   key_name        = aws_key_pair.ec2_key.key_name # AWS에서 생성한 SSH 키 적용
   subnet_id = aws_subnet.dangtong-vpc-public-subnet["a"].id
   security_groups = [aws_security_group.nginx_sg.id]
