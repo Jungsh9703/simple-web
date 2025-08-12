@@ -1,4 +1,4 @@
-## ec2 s3 deploy12 access bucket
+## ec2 s3 deploy12 compeletly deploy simple-web
 name: Deploy to AWS Check
 on:
   push:
